@@ -61,7 +61,7 @@ main {
   width: 100%;
   margin: 0.5rem 0 1rem 0;
   background: black;
-  font-size: 3rem;
+  font-size: 5rem;
   color: white;
   box-shadow: -8px -8px 15px rgba(0, 0, 0, 0.199), 5px 5px 15px rgba(0, 0, 0, 0.336);
   border-radius: 10px;
