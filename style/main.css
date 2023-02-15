@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: #efeffa;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #323257;
+  box-shadow: -8px -8px 15px rgba(26, 20, 20, 0.26), 5px 5px 15px rgba(0, 0, 0, 0.733);
+  border-radius: 10px;
+  padding: 1rem;
+  justify-content: center;
+  color: white;
+}
+.container .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container h1 {
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 1px black;
+  margin: 1rem;
+}
+.container .away {
+  color: #e0dada;
+}
+
+.score-display {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 1rem 0.5rem;
+}
+.score-display .player {
+  display: grid;
+  grid-template-rows: 1fr 4fr 2fr;
+  width: 50%;
+}
+.score-display .player h3 {
+  text-align: center;
+  text-shadow: 2px 2px 1px black;
+  letter-spacing: 2px;
+}
+.score-display .player .display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 0.5rem 0 1rem 0;
+  background: black;
+  font-size: 3rem;
+  color: white;
+  box-shadow: -8px -8px 15px rgba(0, 0, 0, 0.199), 5px 5px 15px rgba(0, 0, 0, 0.336);
+  border-radius: 10px;
+}
+.score-display .player .buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+.score-display .player .buttons button {
+  background-color: #d5f1f1;
+  padding: 0.5rem;
+  outline: 0;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.score-display .player .buttons .reset {
+  grid-column: 1/4;
+}
+.score-display .player .buttons .away-btn {
+  background-color: #e0dada;
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+  }
+  .container h1 {
+    font-size: 1.5rem;
+    border: none;
+  }
+}/*# sourceMappingURL=main.css.map */

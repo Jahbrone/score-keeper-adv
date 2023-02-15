@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="heading">
+          <img src="/img/basketball.png" alt="basketball" />
+          <h1>SCORE CARD</h1>
+          <img src="/img/basketball.png" alt="basketball" />
+        </div>
+        <div class="score-display">
+          <div class="player">
+            <h3>Home<span id="leader"></span></h3>
+            <div class="display" id="p1-score">0</div>
+            <div class="buttons">
+              <button id="p1-add-one">+1</button>
+              <button id="p1-add-two">+2</button>
+              <button id="p1-add-three">+3</button>
+              <button class="reset" id="p1-reset">Reset</button>
+            </div>
+          </div>
+          <div class="player">
+            <h3 class="away">Away</h3>
+            <div class="display" id="p2-score">0</div>
+            <div class="buttons">
+              <button id="p2-add-one" class="away-btn">+1</button>
+              <button id="p2-add-two" class="away-btn">+2</button>
+              <button id="p2-add-three" class="away-btn">+3</button>
+              <button class="reset away-btn" id="p2-reset">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
